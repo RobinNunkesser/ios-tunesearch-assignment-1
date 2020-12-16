@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		6F51BB1A258ABFCE0037420E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F51BB19258ABFCE0037420E /* Preview Assets.xcassets */; };
 		6F51BB25258ABFCE0037420E /* TuneSearchAssignment1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB24258ABFCE0037420E /* TuneSearchAssignment1Tests.swift */; };
 		6F51BB30258ABFCE0037420E /* TuneSearchAssignment1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB2F258ABFCE0037420E /* TuneSearchAssignment1UITests.swift */; };
+		6F51BB42258AC00D0037420E /* TunesearchMockCore in Frameworks */ = {isa = PBXBuildFile; productRef = 6F51BB41258AC00D0037420E /* TunesearchMockCore */; };
+		6F51BB47258AC0AF0037420E /* SearchTermDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F51BB46258AC0AF0037420E /* SearchTermDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		6F51BB2B258ABFCE0037420E /* TuneSearchAssignment1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneSearchAssignment1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F51BB2F258ABFCE0037420E /* TuneSearchAssignment1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneSearchAssignment1UITests.swift; sourceTree = "<group>"; };
 		6F51BB31258ABFCE0037420E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F51BB46258AC0AF0037420E /* SearchTermDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F51BB42258AC00D0037420E /* TunesearchMockCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +104,7 @@
 				6F51BB16258ABFCE0037420E /* Assets.xcassets */,
 				6F51BB1B258ABFCE0037420E /* Info.plist */,
 				6F51BB18258ABFCE0037420E /* Preview Content */,
+				6F51BB46258AC0AF0037420E /* SearchTermDTO.swift */,
 			);
 			path = TuneSearchAssignment1;
 			sourceTree = "<group>";
@@ -146,6 +151,9 @@
 			dependencies = (
 			);
 			name = TuneSearchAssignment1;
+			packageProductDependencies = (
+				6F51BB41258AC00D0037420E /* TunesearchMockCore */,
+			);
 			productName = TuneSearchAssignment1;
 			productReference = 6F51BB0F258ABFCA0037420E /* TuneSearchAssignment1.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 6F51BB06258ABFCA0037420E;
+			packageReferences = (
+				6F51BB40258AC00D0037420E /* XCRemoteSwiftPackageReference "explicitarchitecture-tunesearch-mockcore-spm" */,
+			);
 			productRefGroup = 6F51BB10258ABFCA0037420E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F51BB15258ABFCA0037420E /* ContentView.swift in Sources */,
+				6F51BB47258AC0AF0037420E /* SearchTermDTO.swift in Sources */,
 				6F51BB13258ABFCA0037420E /* TuneSearchAssignment1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -580,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F51BB40258AC00D0037420E /* XCRemoteSwiftPackageReference "explicitarchitecture-tunesearch-mockcore-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RobinNunkesser/explicitarchitecture-tunesearch-mockcore-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F51BB41258AC00D0037420E /* TunesearchMockCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F51BB40258AC00D0037420E /* XCRemoteSwiftPackageReference "explicitarchitecture-tunesearch-mockcore-spm" */;
+			productName = TunesearchMockCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F51BB07258ABFCA0037420E /* Project object */;
 }
